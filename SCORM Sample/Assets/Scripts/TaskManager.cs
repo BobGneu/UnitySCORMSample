@@ -28,6 +28,7 @@ public class TaskManager : MonoBehaviour
         UnityEngine.Application.ExternalEval("console.log(\"Success.\");");
         
         ScormManager.SetCompletionStatus(completionStatusType.completed);
+        ScormManager.SetScore(100, 1.0f, 0, 100);
         ScormManager.SetSatisfaction(successStatusType.passed);
 
         ScormManager.Commit();
