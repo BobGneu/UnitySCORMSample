@@ -8,7 +8,6 @@ public class TaskManager : MonoBehaviour
     void Start()
     {
         UnityEngine.Application.ExternalEval("console.log(\"Log Manager Initialized.\");");
-        // ScormManager.Initialize();
     }
 
     // Update is called once per frame
@@ -30,7 +29,7 @@ public class TaskManager : MonoBehaviour
         ScormManager.SetCompletionStatus(completionStatusType.completed);
         ScormManager.SetScore(100, 1.0f, 0, 100);
         ScormManager.SetSatisfaction(successStatusType.passed);
-
+        
         ScormManager.Commit();
     }
 
